@@ -2,10 +2,10 @@
 
 /**
  *
- *main - Entry point
+ * main - Entry point
  *
- *Return - returns 0 (Success)
  *
+ * Return - returns 0 to mean success
  */
 int main(void)
 {
