@@ -1,4 +1,11 @@
 #include <stdio.h>
+
+/**
+ *
+ *main - Entry point
+ *
+ *Return - returns 0 (Success)
+ */
 int main(){
     char myChar;
 	int myInt;
