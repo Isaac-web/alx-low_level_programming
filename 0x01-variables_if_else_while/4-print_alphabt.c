@@ -8,9 +8,10 @@
  */
 int main(void)
 {
-	for(char i = 'a'; i <= 'z'; i++)
+	char i = 'a';
+	while(i < 'z')
 	{
 		if(i == 'e' || i == 'q') continue;
-		putchar(i)
+		putchar(i);
 	}
 }
