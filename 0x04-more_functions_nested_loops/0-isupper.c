@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  *
  *_isupper - determines if the input is uppercase or not
