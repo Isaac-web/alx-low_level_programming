@@ -2,9 +2,9 @@
 /**
  *
  * main: prints the name of the program
- *
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
  * Return: returns 0
- *
  *
  */
 int main(int argc, char *argv[])
