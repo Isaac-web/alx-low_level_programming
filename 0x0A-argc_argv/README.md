@@ -1,1 +1,1 @@
-A session about argc and argv in c
+Introductionto  C - argc, argv
