@@ -1,9 +1,9 @@
 #include <stdio.h>
 /*
  *
- * main - prints the name of the program
+ * main: prints the name of the program
  *
- * return - returns 0
+ * Return: returns 0
  *
  *
  */
