@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - prints the current file
- *Return - returns success code
+ *Return - aways 0
  */
 int main(void)
 {
