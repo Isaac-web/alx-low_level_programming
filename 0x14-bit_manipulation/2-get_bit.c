@@ -20,10 +20,3 @@ int get_bit(unsigned long int n, unsigned int index)
 
         return result;
 }
-
-
-int main(void)
-{
-        return (0);
-}
-
