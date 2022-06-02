@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  *get_bit - returns the bit at a particular index
  *@n - the number operated on
