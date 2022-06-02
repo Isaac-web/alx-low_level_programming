@@ -7,15 +7,23 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if(!n || !index) 
-		return (-1);
+        int result = 0;
+	unsigned int i;
+	if(!n || !index)
+                return (-1);
 
-	int result = 0, i;
-	for(i = 0; i <= index; i++)
-	{
-		result = n%2;
-		n/=2;
-	}
+        for(i = 0; i <= index; i++)
+        {
+                result = n%2;
+                n/=2;
+        }
 
-	return result;
+        return result;
 }
+
+
+int main(void)
+{
+        return (0);
+}
+
