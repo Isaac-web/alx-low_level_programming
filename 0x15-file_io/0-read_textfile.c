@@ -12,25 +12,39 @@
  * @size_t: number of charaters to be printed
  * Returns - the number of characters read or 0
  */
-
-
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, number_of_chars_read;
+	int fd, write_count,  number_of_chars_read;
 	char *buffer = malloc(sizeof(char) * letters);
 
-	if(filename == NULL) 
+	if(!buffer) 
+		return (0);
+
+	if(!filename) 
 		return (0);
 
 	fd = open(filename, O_RDONLY);
-	if(fd == -1) 
+	if(fd < 0) 
 		return (0);
 
 	number_of_chars_read = read(fd, buffer, letters);
+	
+	if(number_of_chars_read < 0)
+	{
+		free(buffer);
+		return (0);
+	}
 	buffer[number_of_chars_read] = '\n';
+	close(fd);
 
-	printf("%s\n", buffer);
-
-	return number_of_chars_read;
+	
+	write_count = write(STDOUT_FILENO, buffer, number_of_chars_read);
+	if(write_count < 0)
+	{
+		free(buffer);
+		return (0);
+	}
+	
+	free(buffer);
+	return (write_count);
 }
