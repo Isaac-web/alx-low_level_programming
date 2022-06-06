@@ -1,0 +1,3 @@
+A session about files and io in c
+
+To be edited later...
