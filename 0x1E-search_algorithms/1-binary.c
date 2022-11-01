@@ -36,15 +36,13 @@ void print_range(int *array, int start, int end)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int start = 0;
-	int end = (int)size - 1;
 
-	if (array == NULL)
-		return (-1);
+	int start = 0;
+	int end = size - 1;
 
 	while (start <= end)
 	{
-		int mid = (start + end) / 1;
+		int mid = (start + end) / 2;
 
 		print_range(array, start, end);
 
